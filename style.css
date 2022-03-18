@@ -1,5 +1,6 @@
 body {
     background: #f9e933;
+    font-family: 'Merriweather', serif;
 }
 
 header, main, footer {
@@ -19,16 +20,21 @@ main {
     background: white;
 }
 
+    main h1, h2, h3, h4, h5, h6 {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
 header {
     background: white;
     overflow: auto;
 }
 
-header h1 { 
-    float: left;
-    margin-left: 5%;
-    width: 570px;
-}
+    header h1 {
+        float: left;
+        margin-left: 5%;
+        width: 570px;
+        font-family: 'Ubuntu', sans-serif;
+    }
 
 header nav {
     float: right;

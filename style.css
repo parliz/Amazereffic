@@ -1,0 +1,66 @@
+body {
+    background: #f9e933;
+}
+
+header, main, footer {
+    min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+
+header {
+    background: white;
+}
+
+main {
+    background: white;
+}
+
+header {
+    background: white;
+    overflow: auto;
+}
+
+header h1 { 
+    float: left;
+    margin-left: 5%;
+    width: 570px;
+}
+
+header nav {
+    float: right;
+    width: 285px;
+}
+
+.sitemap{
+    position: absolute;
+    right: 35px;
+}
+
+.contact{
+    position: absolute;
+    left: 35px;
+}
+
+div.lamp{
+    text-align: left;
+    padding-bottom: 8%;
+    justify-content: space-between;
+    margin-left: 1%;
+}
+
+main .lamp img{
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    margin-left: 65%;
+    margin-bottom : 2%;
+}
+
+main .lamp .text{
+    padding-left: 1%;
+    padding-top: 3%;
+}

@@ -69,7 +69,7 @@ var main = function (toDoObjects) {
 					// ЭТО КОД ДЛЯ ВКЛАДКИ ТЕГИ 
 					console.log("Щелчок на вкладке Теги");
 					// organizeByTag(toDoObjects);
-					var organizedByTag = organizeByTags(toDoObjects);
+					var organizedByTag = organizeByTags();
 
 					organizedByTag.forEach(function (tag) {
 						var $tagName = $("<h3>").text(tag.name),
@@ -93,21 +93,16 @@ var main = function (toDoObjects) {
 					$button.on("click", function () {
 						var description = $input.val(),
 							// разделение в соответствии с запятыми
-							tags = $tagInput.val().split(",");
+							tags = $tagInput.val().split(","); //массив тэгов
 						toDoObjects.push({ "description": description, "tags": tags });
 						// обновление toDos
-						toDos = toDoObjects.map(function (toDo) {
+						toDos = toDoObjects.map(function (toDo) { //массив дискрипшинов
 							return toDo.description;
 						});
 						$input.val("");
 						$tagInput.val("");
 					});
 					$("main .content").append($inputLabel).append($input).append($tagLabel).append($tagInput).append($button);
-				}
-				else if ($element.parent().is(":nth-child(5)")) {
-					var js = document.createElement('script');
-					js.src = "zadanie_app.js";
-					document.body.appendChild(js);
 				}
 				return false;
 			})
